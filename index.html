@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./public/css/main.css" />
+  </head>
+  <body>
+    <!-- #region project-->
+    <div class="wrapper">
+      <!-- #region menu-->
+      <div class="menu">
+        <nav>
+          <div><a href="#">home</a></div>
+          <div><a href="#">about</a></div>
+          <div><a href="#">contact</a></div>
+          <div><a href="#">gallery</a></div>
+          <div><a href="#">videos</a></div>
+        </nav>
+      </div>
+      <div class="bars">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <!-- #endregion -->
+    </div>
+    <!-- #endregion -->
+
+
+    <script>
+          let bars=document.querySelector(".bars")
+          let menu=document.querySelector(".menu")
+          bars.addEventListener("click",function(){
+            menu.classList.toggle("active")
+            bars.classList.toggle("changeBgBars")
+          })
+    </script>
+  </body>
+</html>
